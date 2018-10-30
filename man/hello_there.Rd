@@ -2,7 +2,7 @@
 % Please edit documentation in R/hello_there.R
 \name{hello_there}
 \alias{hello_there}
-\title{print welcome message}
+\title{Print Welcome Message}
 \usage{
 hello_there(name)
 }
@@ -13,7 +13,12 @@ hello_there(name)
 A character string containing a greeting
 }
 \description{
-print welcome message
+This is a simple function to demonstrate the testing framework
+as as as the documentation.
+Test with: `devtools::test()`
+Create new test with: `devtools::use_test("hello_there_my_new_nest")`
+Update documentation with: `devtools::document()`
+Install updates: `devtools::install()`
 }
 \examples{
 hello_there("Susan")
