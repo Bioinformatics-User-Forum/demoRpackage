@@ -1,3 +1,5 @@
 README.md
 demo-Rpackage.Rproj
 .gitignore
+^.*\.Rproj$
+^\.Rproj\.user$
