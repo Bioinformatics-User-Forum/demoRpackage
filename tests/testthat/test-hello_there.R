@@ -1,17 +1,14 @@
 context("test-hello_there")
 
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
-})
-
 test_that("hello_there works for simple example", {
           expect_equal(hello_there("Susan"), "Hello Susan!")
 })
 
 test_that("hello_there meets simple expectations for simple example", {
           result <- demoRpackage::hello_there("Frank")
-          expect_is(result, "character") # several expectations are tested
-	  expect_equal(length(result), 1)
+          expect_is(result, "character") # datatype should be "character"
+	      expect_equal(length(result), 1) # only one string returned
+	      expect_match(result, "Frank") # name should be part of result
 })
 
 # group advanced test in second context:
